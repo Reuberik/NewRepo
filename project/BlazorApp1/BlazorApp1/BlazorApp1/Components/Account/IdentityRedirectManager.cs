@@ -1,8 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorApp1.Components.Account;
+using System.Diagnostics.CodeAnalysis;
 
+namespace BlazorApp1.Components.Account;
 internal sealed class IdentityRedirectManager(NavigationManager navigationManager)
 {
     public const string StatusCookieName = "Identity.StatusMessage";
