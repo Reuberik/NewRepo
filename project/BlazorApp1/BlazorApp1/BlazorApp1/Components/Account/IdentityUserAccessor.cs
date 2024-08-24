@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Identity;
 using BlazorApp1.Data;
 
-namespace BlazorApp1.Components.Account;
+using Microsoft.AspNetCore.Identity;
 
+namespace BlazorApp1.Components.Account;
 internal sealed class IdentityUserAccessor(UserManager<ApplicationUser> userManager, IdentityRedirectManager redirectManager)
 {
     public async Task<ApplicationUser> GetRequiredUserAsync(HttpContext context)
